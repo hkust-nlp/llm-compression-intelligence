@@ -6,7 +6,7 @@
 
 This is the repository for the paper Compression Represents Intelligence Linearly. 
 
-We find that LLMs’ intelligence – reflected by benchmark scores – almost **linearly** correlates with their ability to compress external text corpora. We measure intelligence along three key abilities: knowledge and commonsense, coding, and mathematical reasoning. Our findings suggest that compression efficiency, as an unsupervised metric derived from raw text corpora, serves as a reliable evaluation measure that is linearly associated with the model capabilities.  <img src="/Users/yuzhenh17/Desktop/cpt/resources/overview.png" alt="overview" style="zoom: 5%;" />
+We find that LLMs’ intelligence – reflected by benchmark scores – almost **linearly** correlates with their ability to compress external text corpora. We measure intelligence along three key abilities: knowledge and commonsense, coding, and mathematical reasoning. Our findings suggest that compression efficiency, as an unsupervised metric derived from raw text corpora, serves as a reliable evaluation measure that is linearly associated with the model capabilities.  <img src="resources/overview.png" alt="overview" style="zoom: 5%;" />
 
 
 
