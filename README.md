@@ -1,7 +1,7 @@
 # Compression Represents Intelligence Linearly
 
 <p align="left">
-   🤗 <a href="https://huggingface.co/datasets/xxxx" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/xxxx" target="_blank">Paper</a> 
+   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/cpt" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/xxxx" target="_blank">Paper</a> 
 </p>
 
 This is the repository for the paper Compression Represents Intelligence Linearly. 
@@ -22,11 +22,11 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 
 ## Data 
 
-In this work, we primarily include three key abilities: knowledge and commonsense, coding, and mathematical reasoning. The corpora we used are sourced from Common Crawl, GitHub, and Arxiv, and are respectively named: cc, python, arxiv-math. The data can be obtained through the following two methods.
+In this work, we primarily include three key abilities: knowledge and commonsense, coding, and mathematical reasoning. The corpora we used are sourced from Common Crawl, GitHub, and Arxiv, and are respectively named: cc, python, arxiv_math. The data can be obtained through the following two methods.
 
 - Method 1: Download the zip file (you can also simply open the following link with the browser):
   ```
-  wget https://huggingface.co/datasets/xxxxxxxx
+  wget https://huggingface.co/datasets/hkust-nlp/cpt/resolve/main/data.zip
   ```
   then unzip it and you may load the data:
   ```python
@@ -42,7 +42,7 @@ In this work, we primarily include three key abilities: knowledge and commonsens
 
   ```python
   from datasets import load_dataset
-  dataset=load_dataset(r"xxxx",name="cc")
+  dataset = load_dataset(r"hkust-nlp/cpt",name="python")
   print(dataset['test'][0])
   ```
 
@@ -50,7 +50,7 @@ Below is our data structure, containing three keys: content, subset, meta. Speci
 
 ```
 "content": "A photo journal about returning...", 
-"subset": "cc" ｜ "python" | "arxiv-math", 
+"subset": "cc" ｜ "python" | "arxiv_math", 
 "meta": {}
 ```
 
@@ -71,7 +71,7 @@ tqdm
 Then, execute the evaluation script `code/evaluation/main.py` with these optional arguments:
 
 ```
---task_name # specifies the subset to eval (cc|python|arxiv-math)
+--task_name # specifies the subset to eval (cc|python|arxiv_math)
 --model_name # specifies the model name
 --block_size # specifies the context window
 --stride   # specifies the stride of sliding window approach
