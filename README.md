@@ -60,11 +60,11 @@ Below is our data structure, containing three keys: content, subset, meta. Speci
 
 #### Compression Evaluation 
 
-We provide Python code for compression evaluation in the `code/evaluation` folder, requiring the following basic environment:
+We utilize Bits Per Character (BPC) as the evaluation metric, implementing both Context Window Unification and a sliding window approach for assessing compression performance. The Python code for this evaluation is accessible in the `code/evaluation` directory and necessitates the specified basic environment:
 
 ```
-datasets
 transformers
+datasets
 tqdm
 ```
 
