@@ -49,11 +49,9 @@ In this work, we primarily include three key abilities: knowledge and commonsens
 Below is our data structure, containing three keys: content, subset, meta. Specifically, "content" refers to the evaluation text data, and "meta" contains data-specific meta-information related to its subset.
 
 ```
-{
-	"content": "A photo journal about returning...", 
-	"subset": "cc" ｜ "python" | "arxiv-math", 
-	"meta": {}
-}
+"content": "A photo journal about returning...", 
+"subset": "cc" ｜ "python" | "arxiv-math", 
+"meta": {}
 ```
 
 
