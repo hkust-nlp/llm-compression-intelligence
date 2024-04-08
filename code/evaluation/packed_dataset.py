@@ -33,7 +33,7 @@ class EvalDataset(Dataset):
         self._curr_idx = 0
         self._arr = []
         self._raw_dataset = load_dataset(
-            "yuzhen17/cpt",
+            "hkust-nlp/cpt",
             self.task_name,
             split='test[:]' if self.file_num == -1 else f"test[:{self.file_num}]",
             cache_dir=self.args.cache_dir,
