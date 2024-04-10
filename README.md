@@ -96,7 +96,7 @@ python -u main.py\
 ```
 
 #### Data Collection 
-We provide data collection pipelines to facilitate future data updates and research, which includes:
+We provide data collection pipelines to facilitate future data updates and research, which include:
 * [GitHub Python](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/github)
 * Common Crawl (TODO)
 * ArXiv papers (TODO)
