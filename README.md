@@ -13,7 +13,7 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 ## Table of Contents 
 
 * [Data](#data)
-* [Usage](#Usage)
+* [Usage](#usage)
 * [TODO](#todo)
 * [Licenses](#licenses)
 * [Citation](#citation)
@@ -96,8 +96,11 @@ python -u main.py\
 ```
 
 #### Data Collection 
-
-The pipelines for data collection will be available soon.
+We provide data collection pipelines to facilitate future data updates and research, which includes:
+* [GitHub Python](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/github)
+* Common Crawl (TODO)
+* ArXiv papers (TODO)
+For details, please refer to the corresponding pages.
 
 
 
