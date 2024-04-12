@@ -96,8 +96,8 @@ python -u main.py\
 
 #### Data Collection 
 We provide data collection pipelines to facilitate future data updates and research, which include:
-* [GitHub Python](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/github)
 * [Common Crawl](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/cc)
+* [GitHub Python](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/github)
 * [ArXiv](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/arxiv)
 
 For details, please refer to the corresponding pages.
