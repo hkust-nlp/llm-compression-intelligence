@@ -1,7 +1,7 @@
 # Compression Represents Intelligence Linearly
 
 <p align="left">
-   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/cpt" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/xxxx" target="_blank">Paper</a> 
+   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/llm-compression" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/xxxx" target="_blank">Paper</a> 
 </p>
 
 This is the repository for the paper Compression Represents Intelligence Linearly. 
@@ -25,7 +25,7 @@ In this work, we primarily include three key abilities: knowledge and commonsens
 
 - Method 1: Download the zip file (you can also simply open the following link with the browser):
   ```
-  wget https://huggingface.co/datasets/hkust-nlp/cpt/resolve/main/data.zip
+  wget https://huggingface.co/datasets/hkust-nlp/llm-compression/resolve/main/data.zip
   ```
   then unzip it and you may load the data:
   ```python
@@ -37,11 +37,11 @@ In this work, we primarily include three key abilities: knowledge and commonsens
   	data = [json.load(line) for line in f]
   ```
   
-- Method 2: Directly load the dataset using [Hugging Face datasets]():
+- Method 2: Directly load the dataset using [Hugging Face datasets](https://huggingface.co/datasets/hkust-nlp/llm-compression):
 
   ```python
   from datasets import load_dataset
-  dataset = load_dataset(r"hkust-nlp/cpt",name="python")
+  dataset = load_dataset(r"hkust-nlp/llm-compression",name="python")
   print(dataset['test'][0])
   ```
 
