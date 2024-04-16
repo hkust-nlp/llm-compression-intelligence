@@ -1,43 +1,26 @@
 # Compression Represents Intelligence Linearly
 
 <p align="left">
-   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/llm-compression" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/2404.09937" target="_blank">Paper</a> 
+   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/llm-compression" target="_blank">HuggingFace Datasets</a>  •   📃 <a href="https://arxiv.org/abs/2404.09937" target="_blank">Paper</a> 
 </p>
 
-This is the repository for the paper Compression Represents Intelligence Linearly. 
+This is the repository for the paper "Compression Represents Intelligence Linearly". 
 
-We find that LLMs’ intelligence – reflected by benchmark scores – almost **linearly** correlates with their ability to compress external text corpora. We measure intelligence along three key abilities: knowledge and commonsense, coding, and mathematical reasoning. Our findings suggest that compression efficiency, as an unsupervised metric derived from raw text corpora, serves as a reliable evaluation measure that is linearly associated with the model capabilities.  <img src="resources/overview.png" alt="overview" style="zoom: 5%;" />
+We find that LLMs’ intelligence – reflected by benchmark scores – almost **linearly** correlates with their ability to compress external text corpora. Our findings suggest that compression efficiency, as an unsupervised metric derived from raw text corpora, serves as a reliable evaluation measure that is linearly associated with the model capabilities. In this repo, we release the compression corpora we used in the paper, the code to compute compression efficiency, as well as our compression corpora collection and processing piplines.  <img src="resources/overview.png" alt="overview" style="zoom: 5%;" />
 
 
 
 ## Table of Contents 
 
-* [Data](#data)
-* [Usage](#usage)
-* [Licenses](#licenses)
-* [Citation](#citation)
+* [Compression Corpora Datasets](#compression-corpora-datasets)
+* [Evaluating Compression](#evaluating-compression)
+* [Data Pipeline](#data-pipeline)
 
 
 
-## Data 
+## Compression Corpora Datasets
 
-In this work, we primarily include three key abilities: knowledge and commonsense, coding, and mathematical reasoning. The corpora we used are sourced from Common Crawl, GitHub, and Arxiv, and are respectively named: cc, python, arxiv_math. The data can be obtained through the following two methods.
-
-- Method 1: Download the zip file (you can also simply open the following link with the browser):
-  ```
-  wget https://huggingface.co/datasets/hkust-nlp/llm-compression/resolve/main/data.zip
-  ```
-  then unzip it and you may load the data:
-  ```python
-  import os
-  import jsonl 
-  
-  File_Dir = "data"
-  with open(os.path.join(File_Dir,"cc.jsonl"),encoding = "utf-8") as f:
-  	data = [json.load(line) for line in f]
-  ```
-  
-- Method 2: Directly load the dataset using [Hugging Face datasets](https://huggingface.co/datasets/hkust-nlp/llm-compression):
+We focus on three key abilities: knowledge and commonsense, coding, and mathematical reasoning. The corpora we used are sourced from Common Crawl, GitHub, and Arxiv, and are respectively named: `cc`, `python`, and `arxiv_math` respectively. The data can be obtained through Huggingface Datasets:
 
   ```python
   from datasets import load_dataset
@@ -45,7 +28,7 @@ In this work, we primarily include three key abilities: knowledge and commonsens
   print(dataset['test'][0])
   ```
 
-Below is our data structure, containing three keys: content, subset, meta. Specifically, "content" refers to the evaluation text data, and "meta" contains data-specific meta-information related to its subset.
+Below is our data structure, containing three fields: content, subset, meta. Specifically, "content" refers to the evaluation text data, and "meta" contains data-specific meta-information related to its subset.
 
 ```
 "content": "A photo journal about returning...", 
@@ -55,9 +38,7 @@ Below is our data structure, containing three keys: content, subset, meta. Speci
 
 
 
-## Usage
-
-#### Compression Evaluation 
+## Evaluating Compression
 
 We utilize Bits Per Character (BPC) as the evaluation metric, implementing both Context Window Unification and a sliding window approach for assessing compression performance. The Python code for this evaluation is accessible in the `code/evaluation` directory and necessitates the specified basic environment:
 
@@ -67,7 +48,7 @@ datasets
 tqdm
 ```
 
-Then, execute the evaluation script `code/evaluation/main.py` with these optional arguments:
+After installing the necessary dependencies, execute the evaluation script `code/evaluation/main.py` with these optional arguments:
 
 ```
 --task_name # specifies the subset to eval (cc|python|arxiv_math)
@@ -94,7 +75,7 @@ python -u main.py\
     --flash
 ```
 
-#### Data Collection 
+## Data Pipeline 
 We provide data collection pipelines to facilitate future data updates and research, which include:
 * [Common Crawl](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/cc)
 * [GitHub Python](https://github.com/hkust-nlp/cpt/tree/main/code/data_collection/github)
