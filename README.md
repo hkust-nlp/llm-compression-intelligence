@@ -118,6 +118,13 @@ Our dataset is primarily licensed under a
 ## Citation
 
 ```
-@xxx
+@misc{huang2024compression,
+      title={Compression Represents Intelligence Linearly}, 
+      author={Yuzhen Huang and Jinghan Zhang and Zifei Shan and Junxian He},
+      year={2024},
+      eprint={2404.09937},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
