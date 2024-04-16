@@ -1,7 +1,7 @@
 # Compression Represents Intelligence Linearly
 
 <p align="left">
-   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/llm-compression" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/xxxx" target="_blank">Paper</a> 
+   🤗 <a href="https://huggingface.co/datasets/hkust-nlp/llm-compression" target="_blank">Hugging Face</a>  •   📃 <a href="https://arxiv.org/abs/2404.09937" target="_blank">Paper</a> 
 </p>
 
 This is the repository for the paper Compression Represents Intelligence Linearly. 
