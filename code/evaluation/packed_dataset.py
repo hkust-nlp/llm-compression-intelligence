@@ -45,7 +45,7 @@ class EvalDataset(Dataset):
         for i in range(len(self.raw_dataset)):
             self.character_num += len(self.raw_dataset[i]['content'])
 
-        self.data = self._raw_dataset.map(
+        self.data = self.raw_dataset.map(
             lambda example: {"encoding": np.array(self.tokenizer.encode(example['content']), dtype=self._dtype)}, num_proc=8)
 
         self.data = np.concatenate([a['encoding'] for a in self.data], axis=0)
