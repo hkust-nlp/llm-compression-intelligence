@@ -18,9 +18,9 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 * [Data Pipeline](#data-pipeline)
 
 
-## Leaderboard
+## Compression Leaderboard
 
-We focus on three key abilities: knowledge and commonsense, coding, and mathematical reasoning and colloct corpora from Common Crawl, GitHub, and Arxiv, respectively. Below are models’ compression efficiency on three external corpora. We report the results of general-purpose models here and utilize the average bits per character (BPC) as the metric. For more detailed results, please refer to [our paper](https://arxiv.org/abs/2404.09937). 
+We focus on three key abilities: knowledge and commonsense, coding, and mathematical reasoning and colloct new corpora from Common Crawl, GitHub, and Arxiv, respectively. Below are models’ compression efficiency on three external corpora. We report the average bits per character (BPC) as the metric. For more details, please refer to [our paper](https://arxiv.org/abs/2404.09937). 
 
 | Model            | Common Crawl | Python | ArXiv-Math | Average |
 | :--------------- | :----------: | :----: | :--------: | :-----: |
