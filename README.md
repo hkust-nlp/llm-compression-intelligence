@@ -12,10 +12,14 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 
 ## Table of Contents 
 
-* [Leaderboard](#leaderboard)
-* [Compression Corpora Datasets](#compression-corpora-datasets)
-* [Evaluating Compression](#evaluating-compression)
-* [Data Pipeline](#data-pipeline)
+- [Compression Represents Intelligence Linearly](#compression-represents-intelligence-linearly)
+  - [Table of Contents](#table-of-contents)
+  - [Leaderboard](#leaderboard)
+  - [Compression Corpora Datasets](#compression-corpora-datasets)
+  - [Evaluating Compression](#evaluating-compression)
+  - [Data Pipeline](#data-pipeline)
+  - [Licenses](#licenses)
+  - [Citation](#citation)
 
 
 
@@ -27,7 +31,7 @@ We focus on three key abilities: knowledge and commonsense, coding, and mathemat
 | :--------------- | :----------: | :----: | :--------: | :-----: |
 | Llama-3-80b      |    0.496     | 0.204  |   0.376    |  0.359  |
 | Mixtral-8x7B     |    0.559     | 0.274  |   0.394    |  0.409  |
-| qwen-72b         |    0.557     | 0.256  |   0.415    |  0.409  |
+| Qwen-72b         |    0.557     | 0.256  |   0.415    |  0.409  |
 | Llama2-70b       |    0.527     | 0.287  |   0.429    |  0.415  |
 | Deepseek-llm-67b |    0.568     | 0.280  |   0.430    |  0.426  |
 | Llama-3-8b       |    0.582     | 0.268  |   0.430    |  0.427  |
