@@ -12,15 +12,10 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 
 ## Table of Contents 
 
-- [Compression Represents Intelligence Linearly](#compression-represents-intelligence-linearly)
-  - [Table of Contents](#table-of-contents)
-  - [Leaderboard](#leaderboard)
-  - [Compression Corpora Datasets](#compression-corpora-datasets)
-  - [Evaluating Compression](#evaluating-compression)
-  - [Data Pipeline](#data-pipeline)
-  - [Licenses](#licenses)
-  - [Citation](#citation)
-
+* [Leaderboard](#leaderboard)
+* [Compression Corpora Datasets](#compression-corpora-datasets)
+* [Evaluating Compression](#evaluating-compression)
+* [Data Pipeline](#data-pipeline)
 
 
 ## Leaderboard
