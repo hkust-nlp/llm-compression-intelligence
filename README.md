@@ -12,10 +12,14 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 
 ## Table of Contents 
 
-* [Leaderboard](#compression-leaderboard)
-* [Compression Corpora Datasets](#compression-corpora-datasets)
-* [Evaluating Compression](#evaluating-compression)
-* [Data Pipeline](#data-pipeline)
+- [Compression Represents Intelligence Linearly](#compression-represents-intelligence-linearly)
+  - [Table of Contents](#table-of-contents)
+  - [Compression Leaderboard](#compression-leaderboard)
+  - [Compression Corpora Datasets](#compression-corpora-datasets)
+  - [Evaluating Compression](#evaluating-compression)
+  - [Data Pipeline](#data-pipeline)
+  - [Licenses](#licenses)
+  - [Citation](#citation)
 
 
 ## Compression Leaderboard
@@ -32,7 +36,7 @@ We focus on three key abilities: knowledge and commonsense, coding, and mathemat
 | Qwen-1.5-32b     |    0.591     | 0.257  |   0.407    |  0.418  |
 | Deepseek-llm-67b |    0.568     | 0.280  |   0.430    |  0.426  |
 | Llama-3-8b       |    0.582     | 0.268  |   0.430    |  0.427  |
-| Yi-34B           |    0.572     | 0.297  |   0.421    |  0.430  |
+| Yi-34b           |    0.572     | 0.297  |   0.421    |  0.430  |
 | Llama-1-65b      |    0.557     | 0.308  |   0.441    |  0.435  |
 | Qwen-1.5-14b     |    0.646     | 0.275  |   0.430    |  0.450  |
 | Qwen-14b         |    0.620     | 0.285  |   0.450    |  0.451  |
@@ -44,7 +48,7 @@ We focus on three key abilities: knowledge and commonsense, coding, and mathemat
 | Qwen-7b          |    0.645     | 0.309  |   0.483    |  0.479  |
 | Llama-1-13b      |    0.609     | 0.356  |   0.487    |  0.484  |
 | Llama-2-7b       |    0.612     | 0.354  |   0.500    |  0.488  |
-| Yi-6B            |    0.638     | 0.351  |   0.483    |  0.491  |
+| Yi-6b            |    0.638     | 0.351  |   0.483    |  0.491  |
 | Deepseek-llm-7b  |    0.635     | 0.338  |   0.500    |  0.491  |
 | Llama-1-7b       |    0.629     | 0.379  |   0.510    |  0.506  |
 | Falcon-7b        |    0.649     | 0.393  |   0.541    |  0.528  |
