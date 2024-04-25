@@ -22,30 +22,32 @@ We find that LLMs’ intelligence – reflected by benchmark scores – almost *
 
 We focus on three key abilities: knowledge and commonsense, coding, and mathematical reasoning and colloct new corpora from Common Crawl, GitHub, and Arxiv, respectively. Below are models’ compression efficiency on three external corpora. We report the average bits per character (BPC) as the metric. For more details, please refer to [our paper](https://arxiv.org/abs/2404.09937). 
 
-| Model            | Common Crawl | Python | ArXiv-Math | Average |
-| :--------------- | :----------: | :----: | :--------: | :-----: |
+| Model            | Common Crawl | Python | Arxiv-Math | Average |
+| ---------------- | :----------: | :----: | :--------: | :-----: |
 | Llama-3-70b      |    0.496     | 0.204  |   0.376    |  0.359  |
 | Mixtral-8x7B     |    0.559     | 0.274  |   0.394    |  0.409  |
 | Qwen-72b         |    0.557     | 0.256  |   0.415    |  0.409  |
-| Llama2-70b       |    0.527     | 0.287  |   0.429    |  0.415  |
+| Qwen-1.5-72b     |    0.560     | 0.256  |   0.417    |  0.411  |
+| Llama-2-70b      |    0.527     | 0.287  |   0.429    |  0.415  |
+| Qwen-1.5-32b     |    0.591     | 0.257  |   0.407    |  0.418  |
 | Deepseek-llm-67b |    0.568     | 0.280  |   0.430    |  0.426  |
 | Llama-3-8b       |    0.582     | 0.268  |   0.430    |  0.427  |
 | Yi-34B           |    0.572     | 0.297  |   0.421    |  0.430  |
 | Llama-1-65b      |    0.557     | 0.308  |   0.441    |  0.435  |
+| Qwen-1.5-14b     |    0.646     | 0.275  |   0.430    |  0.450  |
 | Qwen-14b         |    0.620     | 0.285  |   0.450    |  0.451  |
 | Llama-1-30b      |    0.577     | 0.321  |   0.456    |  0.452  |
 | Mistral-7b       |    0.605     | 0.310  |   0.443    |  0.453  |
-| Llama2-13b       |    0.581     | 0.334  |   0.475    |  0.463  |
+| Llama-2-13b      |    0.581     | 0.334  |   0.475    |  0.463  |
 | Falcon-40b       |    0.593     | 0.320  |   0.482    |  0.465  |
+| Qwen-1.5-7b      |    0.666     | 0.292  |   0.449    |  0.469  |
 | Qwen-7b          |    0.645     | 0.309  |   0.483    |  0.479  |
 | Llama-1-13b      |    0.609     | 0.356  |   0.487    |  0.484  |
-| Llama2-7b        |    0.612     | 0.354  |   0.500    |  0.488  |
+| Llama-2-7b       |    0.612     | 0.354  |   0.500    |  0.488  |
 | Yi-6B            |    0.638     | 0.351  |   0.483    |  0.491  |
 | Deepseek-llm-7b  |    0.635     | 0.338  |   0.500    |  0.491  |
-| Llama1-7b        |    0.629     | 0.379  |   0.510    |  0.506  |
+| Llama-1-7b       |    0.629     | 0.379  |   0.510    |  0.506  |
 | Falcon-7b        |    0.649     | 0.393  |   0.541    |  0.528  |
-
-
 
 ## Compression Corpora Datasets
 
