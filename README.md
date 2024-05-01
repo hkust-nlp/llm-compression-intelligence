@@ -8,7 +8,8 @@ This is the repository for the paper "Compression Represents Intelligence Linear
 
 We find that LLMs’ intelligence – reflected by benchmark scores – almost **linearly** correlates with their ability to compress external text corpora. Our findings suggest that compression efficiency, as an unsupervised metric derived from raw text corpora, serves as a reliable evaluation measure that is linearly associated with the model capabilities. In this repo, we release the compression corpora we used in the paper, the code to compute compression efficiency, as well as our compression corpora collection and processing piplines.  <img src="resources/overview.png" alt="overview" style="zoom: 5%;" />
 
-
+## News
+* [2024.5.1] llm-compression now has been added into [OpenCompass](https://github.com/open-compass/opencompass)🚀🚀🚀 Please refer to [Use Through OpenCompass](#use-through-opencompass) for details.
 
 ## Table of Contents 
 
@@ -105,6 +106,17 @@ python -u main.py\
     --batch_size 8\
     --flash
 ```
+
+### Use Through OpenCompass
+
+Now, you can evaluate model on llm-compression through [OpenCompass](https://github.com/open-compass/opencompass), which is a framework for LLM evaluation.  The dataset name is `llm_compression`. For example, to evaluate a model hosted on the [HuggingFace Hub](https://huggingface.co/models) (e.g. llama-7b) ,you can use the following command:
+
+```bash
+python run.py --datasets llm_compression --hf-path huggyllama/llama-7b --model-kwargs use_flash_attention_2=True  
+```
+
+Please refer to [OpenCompass](https://github.com/open-compass/opencompass)for more details.
+
 
 ## Data Pipeline 
 We provide data collection pipelines to facilitate future data updates and research, which include:
