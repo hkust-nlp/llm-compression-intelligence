@@ -9,6 +9,7 @@ This is the repository for the paper "Compression Represents Intelligence Linear
 We find that LLMs’ intelligence – reflected by benchmark scores – almost **linearly** correlates with their ability to compress external text corpora. Our findings suggest that compression efficiency, as an unsupervised metric derived from raw text corpora, serves as a reliable evaluation measure that is linearly associated with the model capabilities. In this repo, we release the compression corpora we used in the paper, the code to compute compression efficiency, as well as our compression corpora collection and processing piplines.  <img src="resources/overview.png" alt="overview" style="zoom: 5%;" />
 
 ## News
+* **[2024.09.20]** Our paper has been accepted to COLM 2024 🎉🎉🎉
 * **[2024.05.01]** Our compression evaluation has been added into [OpenCompass](https://github.com/open-compass/opencompass/blob/main/configs/datasets/llm_compression/README.md) 🚀🚀🚀 Please refer to [Use Through OpenCompass](#use-through-opencompass) for details.
 
 ## Table of Contents 
@@ -146,13 +147,13 @@ Our dataset is primarily licensed under a
 ## Citation
 
 ```
-@misc{huang2024compression,
-      title={Compression Represents Intelligence Linearly}, 
-      author={Yuzhen Huang and Jinghan Zhang and Zifei Shan and Junxian He},
-      year={2024},
-      eprint={2404.09937},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{
+   huang2024compression,
+   title={Compression Represents Intelligence Linearly},
+   author={Yuzhen Huang and Jinghan Zhang and Zifei Shan and Junxian He},
+   booktitle={First Conference on Language Modeling},
+   year={2024},
+   url={https://openreview.net/forum?id=SHMj84U5SH}
 }
 ```
 
